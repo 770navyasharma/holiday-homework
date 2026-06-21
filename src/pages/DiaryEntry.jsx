@@ -5,13 +5,13 @@ import diaryImage from '../assets/diary_page.png';
 export default function DiaryEntry() {
   return (
     <div className="container animate-fade-in" style={{ maxWidth: '800px', margin: '0 auto' }}>
-      <h1 className="text-center text-primary mb-8">My Diary Entry</h1>
+      <h1 className="text-center text-primary mb-8" style={{ fontSize: 'clamp(2rem, 6vw, 3rem)' }}>My Diary Entry</h1>
       
-      <div className="glass-card mb-8" style={{ position: 'relative', padding: '3rem', backgroundColor: '#FFF9E6', backgroundImage: 'repeating-linear-gradient(transparent, transparent 31px, #e5e5e5 31px, #e5e5e5 32px)', lineHeight: '32px' }}>
+      <div className="glass-card mb-8" style={{ position: 'relative', marginTop: '3rem', padding: 'clamp(1.5rem, 5vw, 3rem)', backgroundColor: '#FFF9E6', backgroundImage: 'repeating-linear-gradient(transparent, transparent 31px, #e5e5e5 31px, #e5e5e5 32px)', lineHeight: '32px' }}>
         <img 
           src={diaryImage} 
           alt="Vintage Diary" 
-          style={{ width: '150px', position: 'absolute', top: '-50px', right: '-20px', transform: 'rotate(15deg)' }} 
+          style={{ width: 'clamp(100px, 20vw, 150px)', position: 'absolute', top: 'clamp(-40px, -10vw, -50px)', right: 'clamp(-10px, -5vw, -20px)', transform: 'rotate(15deg)' }} 
         />
         
         <h3 style={{ fontFamily: 'cursive', marginBottom: '1rem', color: '#555' }}>March 12, 1890</h3>
