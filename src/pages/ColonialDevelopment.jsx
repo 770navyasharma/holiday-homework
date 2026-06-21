@@ -7,30 +7,35 @@ import schoolImage from '../assets/dev_school.png';
 export default function ColonialDevelopment() {
   return (
     <div className="container animate-fade-in">
-      <h1 className="text-center text-primary mb-8">Colonial Rule: Development</h1>
+      <h1 className="text-center text-primary mb-4" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}>Colonial Rule in India</h1>
+      <h2 className="text-center text-secondary mb-8">Development or Exploitation?</h2>
       
       <div className="glass-card mb-8">
-        <p style={{ fontSize: '1.2rem', marginBottom: '2rem', textAlign: 'center' }}>
-          When the British ruled India, they introduced several new technologies and systems. While their main goal was to help themselves, these changes did bring some "Development" to the country.
-        </p>
+        <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.6)', borderRadius: 'var(--radius-md)', marginBottom: '2rem' }}>
+          <p style={{ fontSize: '1.1rem', textAlign: 'center' }}>
+            From 1757 to 1947, India was under British colonial rule. The British said they "developed" India by building railways, schools, and telegraphs. But many Indians say Britain "exploited" India by taking away wealth, land, and freedom. Let’s look at both sides.
+          </p>
+        </div>
+
+        <h3 className="text-secondary mb-6 text-center">What British called “Development”</h3>
 
         <div className="grid grid-cols-3 gap-8">
           <div className="glass-card" style={{ background: 'rgba(78, 205, 196, 0.1)', border: '2px solid var(--secondary)', display: 'flex', flexDirection: 'column' }}>
-            <h3 className="text-secondary mb-4 text-center">Railways 🚂</h3>
+            <h4 className="text-secondary mb-2 text-center">Railways & Roads 🚂</h4>
             <img src={trainImage} alt="Vintage Train" className="img-fluid mb-4" style={{ flexGrow: 1, objectFit: 'cover' }} />
-            <p className="text-center">Built a huge network of trains to transport goods and soldiers quickly across the country.</p>
+            <p className="text-center text-sm"><strong>41,000 km railways by 1947.</strong> Made travel and trade faster. <br/><br/><em>Caption: “Railways helped travel, but also carried raw materials to ports for Britain”</em></p>
           </div>
 
           <div className="glass-card" style={{ background: 'rgba(78, 205, 196, 0.1)', border: '2px solid var(--secondary)', display: 'flex', flexDirection: 'column' }}>
-            <h3 className="text-secondary mb-4 text-center">Post & Telegraph ✉️</h3>
+            <h4 className="text-secondary mb-2 text-center">Telegraph & Post ✉️</h4>
             <img src={postOfficeImage} alt="Post Office" className="img-fluid mb-4" style={{ flexGrow: 1, objectFit: 'cover' }} />
-            <p className="text-center">Set up a modern postal system and telegraph lines, making communication much faster.</p>
+            <p className="text-center text-sm">Messages sent quickly across India.</p>
           </div>
 
           <div className="glass-card" style={{ background: 'rgba(78, 205, 196, 0.1)', border: '2px solid var(--secondary)', display: 'flex', flexDirection: 'column' }}>
-            <h3 className="text-secondary mb-4 text-center">Modern Education 📚</h3>
+            <h4 className="text-secondary mb-2 text-center">Schools & Colleges 📚</h4>
             <img src={schoolImage} alt="Vintage School" className="img-fluid mb-4" style={{ flexGrow: 1, objectFit: 'cover' }} />
-            <p className="text-center">Opened new schools and colleges teaching science and English.</p>
+            <p className="text-center text-sm">English education started. New colleges in Calcutta, Bombay, Madras.</p>
           </div>
         </div>
       </div>
